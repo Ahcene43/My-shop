@@ -218,7 +218,7 @@ function addPiece() {
 
   div.innerHTML = `
     <label>🧩 اختر المودال:</label>
-    <select name="modal${pieceCount}" onchange="showModalImage(this,${pieceCount}); updatePrice();" required>
+    <select name="modal${pieceCount}" onchange="showModalimage(this,${pieceCount}); updatePrice();" required>
       <option value="">-- اختر مودال --</option>
       <option value="1">مودال رقم 1</option>
       <option value="2">مودال رقم 2</option>
@@ -226,7 +226,7 @@ function addPiece() {
       <option value="4">مودال رقم 4</option>
       <option value="5">مودال رقم 5</option>
     </select>
-    <div id="modalImage${pieceCount}" style="margin-top:10px; text-align:center;"></div>
+    <div id="Modaimage${pieceCount}" style="margin-top:10px; text-align:center;"></div>
 
     <label>🔢 الكمية:</label>
     <select name="quantity${pieceCount}" onchange="updatePrice()" required>
