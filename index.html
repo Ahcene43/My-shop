@@ -1,4 +1,4 @@
-٨<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
@@ -226,7 +226,7 @@ function addPiece() {
       <option value="4">مودال رقم 4</option>
       <option value="5">مودال رقم 5</option>
     </select>
-    <div id="Modalimage${pieceCount}" style="margin-top:10px; text-align:center;"></div>
+    <div id="Modaimage${pieceCount}" style="margin-top:10px; text-align:center;"></div>
 
     <label>🔢 الكمية:</label>
     <select name="quantity${pieceCount}" onchange="updatePrice()" required>
@@ -262,7 +262,7 @@ function updateSize(select,id){
 
 // عرض صورة المودال
 function showModalimage(select, id) {
-  const imgDiv = document.getElementById(`Modalimage${id}`);
+  const imgDiv = document.getElementById(`Modaimage${id}`);
   const value = select.value;
   if (!value) {
     imgDiv.innerHTML = "";
@@ -328,4 +328,4 @@ document.getElementById("orderForm").addEventListener("submit", function(e){
 </script>
 
 </body>
-</html>
+  </html>
